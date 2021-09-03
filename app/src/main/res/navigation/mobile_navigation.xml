@@ -31,10 +31,23 @@
         android:id="@+id/profileFragment"
         android:name="com.vmmarinc.sweetanikca2.ui.fragments.ProfileFragment"
         android:label="@string/fragment_profile_title"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_fragment_edit_pro2"
+            app:destination="@id/fragment_edit_pro2" />
+    </fragment>
     <fragment
         android:id="@+id/productDetailFragment"
         android:name="com.vmmarinc.sweetanikca2.ui.fragments.ProductDetailFragment"
         android:label="@string/fragment_product_detail_title"
         tools:layout="@layout/fragment_product_detail" />
+    <fragment
+        android:id="@+id/fragment_edit_pro2"
+        android:name="com.vmmarinc.sweetanikca2.fragment_edit_pro"
+        android:label="fragment_edit_pro"
+        tools:layout="@layout/fragment_edit_pro" >
+        <action
+            android:id="@+id/action_fragment_edit_pro2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
 </navigation>
