@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/commentFragment2"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.CommentFragment"
+        android:label="@string/comments"
+        tools:layout="@layout/fragment_comment" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.ProductFragment"
+        android:label="@string/Productos"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.HomeFragment"
+        android:label="@string/fragment_home_title"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.ProfileFragment"
+        android:label="@string/fragment_profile_title"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.ProductDetailFragment"
+        android:label="@string/fragment_product_detail_title"
+        tools:layout="@layout/fragment_product_detail" />
+</navigation>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.EditProfileFragments">
+
+    <TextView
+        android:id="@+id/Editarinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script"
+        android:text="Editar Informacion"
+        android:textSize="@dimen/subtittle_size"
+        app:layout_constraintBottom_toTopOf="@+id/profile_name"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596"></TextView>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script"
+        android:text="Nombre"
+        android:textSize="@dimen/subtittle_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="84dp"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/profile_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script"
+        android:text="Telefono"
+        android:textSize="@dimen/subtittle_size"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <TextView
+        android:id="@+id/profile_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script"
+        android:text="Direccion"
+        android:textSize="@dimen/subtittle_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="214dp"></TextView>
+
+    <EditText
+        android:id="@+id/txtftel"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/label1"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/Button_edit"
+        app:layout_constraintTop_toBottomOf="@+id/profile_direccion"
+        app:layout_constraintVertical_bias="0.35"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/txtfdir"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/label2"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/profile_direccion"
+        app:layout_constraintTop_toBottomOf="@+id/profile_telefono"
+        app:layout_constraintVertical_bias="0.493"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/txtfnombre"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/label"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/profile_telefono"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintVertical_bias="0.431"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/Button_edit"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
